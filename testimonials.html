@@ -1,0 +1,63 @@
+<!-- Testimonials Component -->
+<div class="testimonials-section section">
+    <h2 class="section-title">What Our Clients Say</h2>
+    <div class="testimonial-container container">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-item">
+            <p class="testimonial-quote">"Macellum Media transformed our online presence. Their strategic approach and attention to detail were outstanding. We saw a significant increase in leads within the first month!"</p>
+            <p class="testimonial-author">- Client A, Company X</p>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="testimonial-item">
+            <p class="testimonial-quote">"Working with Macellum Media was a game-changer. They understood our needs perfectly and delivered a website that not only looks great but also performs exceptionally well."</p>
+            <p class="testimonial-author">- Client B, Company Y</p>
+        </div>
+        <!-- Add more testimonials as needed -->
+    </div>
+</div>
+
+<style>
+.testimonials-section {
+    background-color: #FAF6F0; /* Ivory */
+    padding: 4rem 0;
+}
+
+.testimonial-container {
+    display: flex;
+    flex-direction: column; /* Stack testimonials vertically on smaller screens */
+    gap: 2rem; /* Space between testimonial items */
+}
+
+.testimonial-item {
+    background-color: #FFFFFF; /* White background for each testimonial */
+    border-left: 5px solid #C2A14D; /* Roman Gold accent */
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.testimonial-quote {
+    font-style: italic;
+    color: #0E0E0E; /* Obsidian */
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.testimonial-author {
+    font-weight: bold;
+    color: #791C1F; /* Crimson */
+    text-align: right;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+    .testimonial-container {
+        flex-direction: row; /* Place testimonials side-by-side on larger screens */
+        justify-content: space-around;
+    }
+    .testimonial-item {
+        flex-basis: 45%; /* Adjust width of each testimonial item */
+    }
+}
+</style>
